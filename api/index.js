@@ -1,18 +1,18 @@
 require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
-const sequelize = require("./config/database");
+const sequelize = require("../config/database");
 
 // Import models
-const User = require("./models/User");
-const Project = require("./models/Project");
-const Assignment = require("./models/Assignment");
+const User = require("../models/User");
+const Project = require("../models/Project");
+const Assignment = require("../models/Assignment");
 
 // Import routes
-const authRoutes = require("./routes/auth");
-const engineerRoutes = require("./routes/engineers");
-const projectRoutes = require("./routes/projects");
-const assignmentRoutes = require("./routes/assignments");
+const authRoutes = require("../routes/auth");
+const engineerRoutes = require("../routes/engineers");
+const projectRoutes = require("../routes/projects");
+const assignmentRoutes = require("../routes/assignments");
 
 const app = express();
 
